@@ -1,0 +1,12 @@
+# from: https://medium.com/slalom-build/pre-commit-hooks-for-terraform-9356ee6db882
+
+repos:
+- repo: https://github.com/gruntwork-io/pre-commit
+  rev: v0.1.18 # Get the latest from: https://github.com/gruntwork-io/pre-commit/releases
+  hooks:
+    - id: tflint
+      args:
+        - "--module"
+        - "--config=.tflint.hcl"
+    - id: terraform-validate
+    - id: terraform-fmt
