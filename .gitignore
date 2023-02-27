@@ -36,3 +36,6 @@ terraform.rc
 .python-version
 .pytest_cache
 __pycache__
+
+# modules to ignore moving forward?
+**/modules/terraform-azurerm-aci/*
