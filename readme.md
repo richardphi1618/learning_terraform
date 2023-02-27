@@ -1,3 +1,3 @@
 # About
 
-Setting up basic Terraform templates and applications 
+Setting up basic Terraform templates and applications

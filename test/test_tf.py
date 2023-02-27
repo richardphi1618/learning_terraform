@@ -16,4 +16,6 @@ def test_outputs_tags(plan):
     """
     Test to check the resource group has the appropriate tags
     """
-    assert sorted(plan.outputs['rg_tags'].keys()) == sorted([ "CostCenter", "Owner", "User", "Enviornment"])
+    assert sorted(plan.outputs["rg_tags"].keys()) == sorted(
+        ["CostCenter", "Owner", "User", "Enviornment"]
+    )

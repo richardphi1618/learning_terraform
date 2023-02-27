@@ -19,8 +19,7 @@ echo \
 sudo apt-get update
 
 # Install Docker and related packages
-sudo apt-get install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin 
+sudo apt-get install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 
 # Add admin to docker group
 sudo usermod -aG docker adminuser
-

@@ -3,5 +3,5 @@ output "public_ip_address_01" {
 }
 
 output "rg_tags" {
-  value = "${azurerm_resource_group.rg.tags}"
+  value = azurerm_resource_group.rg.tags
 }
