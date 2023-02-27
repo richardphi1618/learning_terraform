@@ -12,7 +12,7 @@ resource "azurerm_linux_virtual_machine" "vm01" {
     azurerm_network_interface.nic01.id,
   ]
 
-  custom_data = filebase64("../templates/install_docker.tpl")
+  custom_data = filebase64("../templates/install_docker.sh")
 
   admin_ssh_key {
     username   = "adminuser"
@@ -71,8 +71,4 @@ resource "azurerm_network_interface" "nic01" {
 data "azurerm_public_ip" "pip01-data" {
   name                = azurerm_public_ip.pip01.name
   resource_group_name = azurerm_resource_group.rg.name
-}
-
-output "public_ip_address_01" {
-  value = "${azurerm_linux_virtual_machine.vm01.name}: ${data.azurerm_public_ip.pip01-data.ip_address}"
 }
