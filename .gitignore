@@ -33,9 +33,11 @@ override.tf.json
 .terraformrc
 terraform.rc
 
+#Python Specific things
 .python-version
 .pytest_cache
 __pycache__
+.ruff_cache
 
 # modules to ignore moving forward?
 **/modules/terraform-azurerm-aci/*
